@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-wood-light: #d2b48c;
+  --color-wood-dark: #5d4037;
+  --color-wood-warm: #8b5a2b;
+  --font-display: "Playfair Display", serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  @apply bg-white text-zinc-900;
+}
+
+h1, h2, h3, .font-display {
+  font-family: 'Playfair Display', serif;
+}
+
+.glass-nav {
+  @apply bg-white/80 backdrop-blur-md border-b border-zinc-200/50;
+}
+
+.btn-primary {
+  @apply bg-zinc-900 text-white px-8 py-3 rounded-none hover:bg-zinc-800 transition-all duration-300 uppercase tracking-widest text-xs font-bold;
+}
+
+.btn-secondary {
+  @apply border border-zinc-900 text-zinc-900 px-8 py-3 rounded-none hover:bg-zinc-900 hover:text-white transition-all duration-300 uppercase tracking-widest text-xs font-bold;
+}
